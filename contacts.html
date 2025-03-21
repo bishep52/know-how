@@ -1,768 +1,886 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Future Tech | Контакты</title>
-    <link rel="stylesheet" href="./styles/main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.1/imask.min.js" defer></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.1/imask.min.js"
+      defer
+    ></script>
     <script src="./scripts/main.js" type="module" defer></script>
-</head>
-<body>
-<header class="header" data-js-header>
-    <div class="header__promo">
+  </head>
+  <body>
+    <header class="header" data-js-header>
+      <div class="header__promo">
         <div class="header__promo-inner container">
-            <a href="#!" class="header__promo-link"
+          <a href="#!" class="header__promo-link"
             ><span class="icon icon__yellow-arrow"
-            >Следите за нашими последними изменениями и новостями</span
+              >Следите за нашими последними изменениями и новостями</span
             ></a
-            >
+          >
         </div>
-    </div>
-    <div class="header__body">
+      </div>
+      <div class="header__body">
         <div class="header__body-inner container">
+          <a
+            href="./index.html"
+            class="header__logo logo"
+            aria-label="Home"
+            title="Home"
+          >
+            <img
+              src="./images/logo.svg"
+              alt=""
+              class="logo__image"
+              width="179"
+              height="50"
+            />
+            <small>beta</small>
+          </a>
+          <div class="header__overlay" data-js-header-overlay>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="./index.html" class="header__menu-link">Главная</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="./news.html" class="header__menu-link">Новости</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="./podcasts.html" class="header__menu-link"
+                    >Подкасты</a
+                  >
+                </li>
+              </ul>
+            </nav>
             <a
-                    href="./index.html"
-                    class="header__logo logo"
-                    aria-label="Home"
-                    title="Home"
+              href="./contacts.html"
+              class="header__contact-us-link button button--accent"
+              >Свяжитесь с нами</a
             >
-                <img
-                        src="./images/logo.svg"
-                        alt=""
-                        class="logo__image"
-                        width="179"
-                        height="50"
-                />
-            </a>
-            <div class="header__overlay" data-js-header-overlay>
-                <nav class="header__menu">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item">
-                            <a href="./index.html" class="header__menu-link"
-                            >Главная</a
-                            >
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="./news.html" class="header__menu-link">Новости</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="./podcasts.html" class="header__menu-link"
-                            >Подкасты</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-                <a
-                        href="./contacts.html"
-                        class="header__contact-us-link button button--accent"
-                >Свяжитесь с нами</a
-                >
-            </div>
+          </div>
 
-            <button
-                    class="header__burger-button burger-button visible-mobile"
-                    type="button"
-                    aria-label="Open Menu"
-                    title="Open Menu"
-                    data-js-header-burger-button
-            >
-                <span class="burger-button__line"></span>
-                <span class="burger-button__line"></span>
-                <span class="burger-button__line"></span>
-            </button>
+          <button
+            class="header__burger-button burger-button visible-mobile"
+            type="button"
+            aria-label="Open Menu"
+            title="Open Menu"
+            data-js-header-burger-button
+          >
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+          </button>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
-<main>
-    <section class="contacts" aria-labelledby="contacts-title">
+    <main>
+      <section class="contacts" aria-labelledby="contacts-title">
         <header class="contacts__header">
-            <h1 class="visually-hidden" id="contacts-title">Контакты</h1>
-            <ul class="bordered-grid bordered-grid--4-cols container">
-                <li class="bordered-grid__item">
-                    <div class="contacts-card">
-                        <h2 class="contacts-card__title h6">Контакты</h2>
-                        <div class="contacts-card__body">
-                            <a href="mailto:contact@know-how.com"
-                               class="contacts-card__link button button--dark-gray">
-                                <span class="icon icon__yellow-arrow">contact@know-how.com</span>
-                            </a>
-                            <a href="tel:+11234567890" class="contacts-card__link button button--dark-gray">
-                                <span class="icon icon__yellow-arrow">+1 (123) 456-7890</span>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li class="bordered-grid__item">
-                    <div class="contacts-card">
-                        <h2 class="contacts-card__title h6">Техническая поддержка</h2>
-                        <div class="contacts-card__body">
-                            <a href="mailto:contact@know-how.com"
-                               class="contacts-card__link button button--dark-gray">
-                                <span class="icon icon__yellow-arrow">contact@know-how.com</span>
-                            </a>
-                            <a href="tel:+11234567890" class="contacts-card__link button button--dark-gray">
-                                <span class="icon icon__yellow-arrow">+1 (123) 456-7890</span>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li class="bordered-grid__item">
-                    <div class="contacts-card">
-                        <h2 class="contacts-card__title h6">Наш адрес</h2>
-                        <div class="contacts-card__body">
-                            <address class="contacts-card__address">
-                                ул. Большая Санкт-Петербургская, дом 46
-                            </address>
-                            <a href="https://yandex.ru/maps/-/CHuUuEj0" target="_blank"
-                               class="contacts-card__link button button--dark-gray">
-                                <span class="icon icon__yellow-arrow">Показать на карте</span>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li class="bordered-grid__item">
-                    <div class="contacts-card">
-                        <h2 class="contacts-card__title h6">Социальные сети</h2>
-                        <div class="contacts-card__body">
-                            <div class="soc1als soc1als--3-cols">
-                                <ul class="soc1als__list">
-                                    <li class="soc1als__item">
-                                        <a href="#!"
-                                           class="soc1als__link"
-                                           target="_blank"
-                                           aria-label="Twitter"
-                                           title="Twitter"
-                                        >
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                 viewBox="0,0,256,256"
-                                                 style="fill:#FFFFFF;">
-                                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                                   stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                                   stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-                                                   font-weight="none" font-size="none" text-anchor="none"
-                                                   style="mix-blend-mode: normal">
-                                                    <g transform="scale(5.12,5.12)">
-                                                        <path d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z"></path>
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="soc1als__item">
-                                        <a href="#!"
-                                           class="soc1als__link"
-                                           target="_blank"
-                                           aria-label="Medium"
-                                           title="Medium"
-                                        >
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                 viewBox="0,0,256,256"
-                                                 style="fill:#FFFFFF;">
-                                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                                   stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                                   stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-                                                   font-weight="none" font-size="none" text-anchor="none"
-                                                   style="mix-blend-mode: normal">
-                                                    <g transform="scale(5.12,5.12)">
-                                                        <path d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM37.72,33l-3.73,-0.01c0,0 -0.08,0.01 -0.21,0.01c-0.3,0 -0.92,-0.08 -1.65,-0.58c-1.31,-0.91 -2.56,-3.17 -3.55,-3.17c-0.07,0 -0.13,0.01 -0.19,0.03c-0.86,0.27 -1.12,1.13 -1.12,2.18c0,0.37 -0.26,0.54 -0.96,0.54h-1.93c-2.16,0 -4.25,-0.05 -6.6,-2.62c-3.46,-3.79 -6.7,-10.53 -6.7,-10.53c0,0 -0.18,-0.39 0.01,-0.62c0.18,-0.21 0.6,-0.23 0.76,-0.23c0.04,0 0.06,0 0.06,0h4c0,0 0.37,0.07 0.64,0.27c0.23,0.17 0.35,0.48 0.35,0.48c0,0 0.68,1.32 1.53,2.81c1.43,2.46 2.2,3.28 2.75,3.28c0.09,0 0.18,-0.02 0.27,-0.07c0.82,-0.45 0.58,-4.09 0.58,-4.09c0,0 0.01,-1.32 -0.42,-1.9c-0.33,-0.46 -0.96,-0.59 -1.24,-0.63c-0.22,-0.03 0.14,-0.55 0.62,-0.79c0.62,-0.3 1.65,-0.36 2.89,-0.36h0.6c1.17,0.02 1.2,0.14 1.66,0.25c1.38,0.33 0.91,1.62 0.91,4.71c0,0.99 -0.18,2.38 0.53,2.85c0.05,0.03 0.12,0.05 0.21,0.05c0.46,0 1.45,-0.59 3.03,-3.26c0.88,-1.52 1.56,-3.03 1.56,-3.03c0,0 0.15,-0.27 0.38,-0.41c0.22,-0.13 0.22,-0.13 0.51,-0.13h0.03c0.32,0 3.5,-0.03 4.2,-0.03h0.08c0.67,0 1.28,0.01 1.39,0.42c0.16,0.62 -0.49,1.73 -2.2,4.03c-2.82,3.77 -3.14,3.49 -0.8,5.67c2.24,2.08 2.7,3.09 2.78,3.22c0.93,1.54 -1.03,1.66 -1.03,1.66z"></path>
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+          <h1 class="visually-hidden" id="contacts-title">Контакты</h1>
+          <ul class="bordered-grid bordered-grid--4-cols container">
+            <li class="bordered-grid__item">
+              <div class="contacts-card">
+                <h2 class="contacts-card__title h6">Контакты</h2>
+                <div class="contacts-card__body">
+                  <a
+                    href="mailto:contact@know-how.com"
+                    class="contacts-card__link button button--dark-gray"
+                  >
+                    <span class="icon icon__yellow-arrow"
+                      >contact@know-how.com</span
+                    >
+                  </a>
+                  <a
+                    href="tel:+11234567890"
+                    class="contacts-card__link button button--dark-gray"
+                  >
+                    <span class="icon icon__yellow-arrow"
+                      >+1 (123) 456-7890</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bordered-grid__item">
+              <div class="contacts-card">
+                <h2 class="contacts-card__title h6">Техническая поддержка</h2>
+                <div class="contacts-card__body">
+                  <a
+                    href="mailto:contact@know-how.com"
+                    class="contacts-card__link button button--dark-gray"
+                  >
+                    <span class="icon icon__yellow-arrow"
+                      >contact@know-how.com</span
+                    >
+                  </a>
+                  <a
+                    href="tel:+11234567890"
+                    class="contacts-card__link button button--dark-gray"
+                  >
+                    <span class="icon icon__yellow-arrow"
+                      >+1 (123) 456-7890</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bordered-grid__item">
+              <div class="contacts-card">
+                <h2 class="contacts-card__title h6">Наш адрес</h2>
+                <div class="contacts-card__body">
+                  <address class="contacts-card__address">
+                    ул. Большая Санкт-Петербургская, дом 46
+                  </address>
+                  <a
+                    href="https://yandex.ru/maps/-/CHuUuEj0"
+                    target="_blank"
+                    class="contacts-card__link button button--dark-gray"
+                  >
+                    <span class="icon icon__yellow-arrow"
+                      >Показать на карте</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bordered-grid__item">
+              <div class="contacts-card">
+                <h2 class="contacts-card__title h6">Социальные сети</h2>
+                <div class="contacts-card__body">
+                  <div class="soc1als soc1als--3-cols">
+                    <ul class="soc1als__list">
+                      <li class="soc1als__item">
+                        <a
+                          href="#!"
+                          class="soc1als__link"
+                          target="_blank"
+                          aria-label="Twitter"
+                          title="Twitter"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0,0,256,256"
+                            style="fill: #ffffff"
+                          >
+                            <g
+                              fill="#ffffff"
+                              fill-rule="nonzero"
+                              stroke="none"
+                              stroke-width="1"
+                              stroke-linecap="butt"
+                              stroke-linejoin="miter"
+                              stroke-miterlimit="10"
+                              stroke-dasharray=""
+                              stroke-dashoffset="0"
+                              font-family="none"
+                              font-weight="none"
+                              font-size="none"
+                              text-anchor="none"
+                              style="mix-blend-mode: normal"
+                            >
+                              <g transform="scale(5.12,5.12)">
+                                <path
+                                  d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="soc1als__item">
+                        <a
+                          href="#!"
+                          class="soc1als__link"
+                          target="_blank"
+                          aria-label="Medium"
+                          title="Medium"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0,0,256,256"
+                            style="fill: #ffffff"
+                          >
+                            <g
+                              fill="#ffffff"
+                              fill-rule="nonzero"
+                              stroke="none"
+                              stroke-width="1"
+                              stroke-linecap="butt"
+                              stroke-linejoin="miter"
+                              stroke-miterlimit="10"
+                              stroke-dasharray=""
+                              stroke-dashoffset="0"
+                              font-family="none"
+                              font-weight="none"
+                              font-size="none"
+                              text-anchor="none"
+                              style="mix-blend-mode: normal"
+                            >
+                              <g transform="scale(5.12,5.12)">
+                                <path
+                                  d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM37.72,33l-3.73,-0.01c0,0 -0.08,0.01 -0.21,0.01c-0.3,0 -0.92,-0.08 -1.65,-0.58c-1.31,-0.91 -2.56,-3.17 -3.55,-3.17c-0.07,0 -0.13,0.01 -0.19,0.03c-0.86,0.27 -1.12,1.13 -1.12,2.18c0,0.37 -0.26,0.54 -0.96,0.54h-1.93c-2.16,0 -4.25,-0.05 -6.6,-2.62c-3.46,-3.79 -6.7,-10.53 -6.7,-10.53c0,0 -0.18,-0.39 0.01,-0.62c0.18,-0.21 0.6,-0.23 0.76,-0.23c0.04,0 0.06,0 0.06,0h4c0,0 0.37,0.07 0.64,0.27c0.23,0.17 0.35,0.48 0.35,0.48c0,0 0.68,1.32 1.53,2.81c1.43,2.46 2.2,3.28 2.75,3.28c0.09,0 0.18,-0.02 0.27,-0.07c0.82,-0.45 0.58,-4.09 0.58,-4.09c0,0 0.01,-1.32 -0.42,-1.9c-0.33,-0.46 -0.96,-0.59 -1.24,-0.63c-0.22,-0.03 0.14,-0.55 0.62,-0.79c0.62,-0.3 1.65,-0.36 2.89,-0.36h0.6c1.17,0.02 1.2,0.14 1.66,0.25c1.38,0.33 0.91,1.62 0.91,4.71c0,0.99 -0.18,2.38 0.53,2.85c0.05,0.03 0.12,0.05 0.21,0.05c0.46,0 1.45,-0.59 3.03,-3.26c0.88,-1.52 1.56,-3.03 1.56,-3.03c0,0 0.15,-0.27 0.38,-0.41c0.22,-0.13 0.22,-0.13 0.51,-0.13h0.03c0.32,0 3.5,-0.03 4.2,-0.03h0.08c0.67,0 1.28,0.01 1.39,0.42c0.16,0.62 -0.49,1.73 -2.2,4.03c-2.82,3.77 -3.14,3.49 -0.8,5.67c2.24,2.08 2.7,3.09 2.78,3.22c0.93,1.54 -1.03,1.66 -1.03,1.66z"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </header>
         <div class="contacts__body">
-            <div class="list">
-                <div class="list__item">
-                    <div class="card container">
-                        <div class="card__preview">
-                            <div class="card__preview-main">
-                                <img
-                                        class="card__preview-icon"
-                                        src="./images/contacts/icon-1.svg"
-                                        alt=""
-                                        width="80"
-                                        height="80"
-                                        loading="lazy"
-                                >
-                                <div class="card__preview-info">
-                                    <h2 class="card__preview-title">Заполните форму для связи с нами!</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card__body">
-                            <form class="feedback-form" action="#!">
-                                <div class="feedback-form__cell field">
-                                    <label class="field__label" for="firstName">
-                                        Имя <span class="field__required-star" aria-hidden="true">*</span>
-                                    </label>
-                                    <input
-                                            class="field__control"
-                                            id="firstName"
-                                            placeholder="Иван"
-                                            required
-                                    >
-                                </div>
-                                <div class="feedback-form__cell field">
-                                    <label class="field__label" for="lastName">
-                                        Фамилия
-                                    </label>
-                                    <input
-                                            class="field__control"
-                                            id="lastName"
-                                            placeholder="Иванов"
-                                    >
-                                </div>
-                                <div class="feedback-form__cell field">
-                                    <label class="field__label" for="email">
-                                        Email <span class="field__required-star" aria-hidden="true">*</span>
-                                    </label>
-                                    <input
-                                            class="field__control"
-                                            id="email"
-                                            placeholder="example@email.com"
-                                            required
-                                            type="email"
-                                    >
-                                </div>
-                                <div class="feedback-form__cell field">
-                                    <label class="field__label" for="phoneNumber">Номер телефона</label>
-                                    <div class="field__body">
-                                        <div class="select" data-js-select>
-                                            <label
-                                                    class="select__label visually-hidden"
-                                                    for="phoneNumberPrefix"
-                                                    id="phone-number-prefix-select-label"
-                                            >
-                                                Phone number prefix
-                                            </label>
-                                            <select
-                                                    class="select__original-control field__control"
-                                                    id="phoneNumberPrefix"
-                                                    tabindex="-1"
-                                                    data-js-select-original-control
-                                            >
-                                                <option value="+7" selected>+7</option>
-                                                <option value="+1">+1</option>
-                                                <option value="+2">+2</option>
-                                                <option value="+3">+3</option>
-                                            </select>
-                                            <div class="select__body ">
-                                                <div
-                                                        class="select__button field__control"
-                                                        tabindex="0"
-                                                        role="combobox"
-                                                        aria-expanded="false"
-                                                        aria-haspopup="listbox"
-                                                        aria-controls="phone-number-prefix-select-dropdown"
-                                                        aria-labelledby="phone-number-prefix-select-label"
-                                                        data-js-select-button
-                                                >
-                                                    +7
-                                                </div>
-                                                <div
-                                                        class="select__dropdown is-on-the-left-side"
-                                                        id="phone-number-prefix-select-dropdown"
-                                                        role="listbox"
-                                                        aria-labelledby="phone-number-prefix-select-label"
-                                                        data-js-select-dropdown
-                                                >
-                                                    <div
-                                                            class="select__option is-selected is-current"
-                                                            id="phone-number-prefix-select-option-1"
-                                                            role="option"
-                                                            aria-selected="true"
-                                                            data-js-select-option
-                                                    >
-                                                        +7
-                                                    </div>
-                                                    <div
-                                                            class="select__option"
-                                                            id="phone-number-prefix-select-option-2"
-                                                            role="option"
-                                                            aria-selected="false"
-                                                            data-js-select-option
-                                                    >
-                                                        +1
-                                                    </div>
-                                                    <div
-                                                            class="select__option"
-                                                            id="phone-number-prefix-select-option-3"
-                                                            role="option"
-                                                            aria-selected="false"
-                                                            data-js-select-option
-                                                    >
-                                                        +2
-                                                    </div>
-                                                    <div
-                                                            class="select__option"
-                                                            id="phone-number-prefix-select-option-4"
-                                                            role="option"
-                                                            aria-selected="false"
-                                                            data-js-select-option
-                                                    >
-                                                        +3
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <input
-                                                class="field__control"
-                                                id="phoneNumber"
-                                                placeholder="(999) 999-99-99"
-                                                data-js-input-mask="(000) 000-00-00"
-                                        >
-                                    </div>
-                                </div>
-                                <div class="feedback-form__cell feedback-form__cell--wide field">
-                                    <label class="field__label" for="message">
-                                        Сообщение <span class="field__required-star" aria-hidden="true">*</span>
-                                    </label>
-                                    <textarea
-                                            class="field__control"
-                                            id="message"
-                                            placeholder="Привет! У меня есть идея..."
-                                            required
-                                    ></textarea>
-                                </div>
-                                <div class="feedback-form__cell feedback-form__cell--wide">
-                                    <div class="feedback-form__actions">
-                                        <div class="feedback-form__agreement">
-                                            <label class="checkbox">
-                                                <input
-                                                        class="checkbox__input"
-                                                        type="checkbox"
-                                                        required
-                                                >
-                                                <span class="checkbox__label">Я согласен с правилами пользователя и политикой приватности</span>
-                                            </label>
-                                        </div>
-                                        <button
-                                                class="feedback-form__submit-button button button--accent"
-                                                type="submit"
-                                        >
-                                            Отправить
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+          <div class="list">
+            <div class="list__item">
+              <div class="card container">
+                <div class="card__preview">
+                  <div class="card__preview-main">
+                    <img
+                      class="card__preview-icon"
+                      src="./images/contacts/icon-1.svg"
+                      alt=""
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                    />
+                    <div class="card__preview-info">
+                      <h2 class="card__preview-title">
+                        Заполните форму для связи с нами!
+                      </h2>
                     </div>
+                  </div>
                 </div>
-                <div class="list__item">
-                    <div class="card container">
-                        <div class="card__preview">
-                            <div class="card__preview-main">
-                                <img
-                                        class="card__preview-icon"
-                                        src="./images/contacts/icon-2.svg"
-                                        alt=""
-                                        width="80" height="80" loading="lazy"
-                                />
-                                <div class="card__preview-info">
-                                    <h2 class="card__preview-title h3">Часто задаваемые вопросы</h2>
-                                    <div class="card__preview-description">
-                                        <p>
-                                            Не нашли свой вопрос? <br> Напишите нам лично!
-                                        </p>
-                                    </div>
-                                </div>
-                                <a class="card__preview-link button button--dark-gray"
-                                   href="mailto:contact@know-how.com">
-                                    <span class="icon icon--yellow-arrow">Задать вопрос</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card__body">
-                            <div class="accordion-group">
-                                <div class="accordion tile">
-                                    <details class="accordion__details" name="faq" open>
-                                        <summary class="accordion__summary">
-                                            <h4 class="accordion__title h6">
-                                                <span role="term"
-                                                      aria-details="faq-1">В чем основная цель программы?</span>
-                                            </h4>
-                                        </summary>
-                                    </details>
-                                    <div
-                                            class="accordion__content"
-                                            id="faq-1"
-                                            role="definition"
-                                    >
-                                        <div class="accordion__content-inner">
-                                            <div class="accordion__content-body">
-                                                <p>
-                                                    Улучшить учебный процесс, повысить академическую успеваемость,
-                                                    развить soft skills <br> и поддерживать сплоченное студенческое
-                                                    сообщество.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion tile">
-                                    <details class="accordion__details" name="faq">
-                                        <summary class="accordion__summary">
-                                            <h4 class="accordion__title h6">
-                                                <span role="term" aria-details="faq-2">Как работает система поиска партнеров/наставников?</span>
-                                            </h4>
-                                        </summary>
-                                    </details>
-                                    <div
-                                            class="accordion__content"
-                                            id="faq-2"
-                                            role="definition"
-                                    >
-                                        <div class="accordion__content-inner">
-                                            <div class="accordion__content-body">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius,
-                                                    illo.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion tile">
-                                    <details class="accordion__details" name="faq">
-                                        <summary class="accordion__summary">
-                                            <h4 class="accordion__title h6">
-                                                <span role="term" aria-details="faq-3">Как связаться с организаторами программы?</span>
-                                            </h4>
-                                        </summary>
-                                    </details>
-                                    <div
-                                            class="accordion__content"
-                                            id="faq-3"
-                                            role="definition"
-                                    >
-                                        <div class="accordion__content-inner">
-                                            <div class="accordion__content-body">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est,
-                                                    impedit.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion tile">
-                                    <details class="accordion__details" name="faq">
-                                        <summary class="accordion__summary">
-                                            <h4 class="accordion__title h6">
-                                                <span role="term" aria-details="faq-4">Получу ли я сертификат об участии в программе?</span>
-                                            </h4>
-                                        </summary>
-                                    </details>
-                                    <div
-                                            class="accordion__content"
-                                            id="faq-4"
-                                            role="definition"
-                                    >
-                                        <div class="accordion__content-inner">
-                                            <div class="accordion__content-body">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, omnis!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion tile">
-                                    <details class="accordion__details" name="faq">
-                                        <summary class="accordion__summary">
-                                            <h4 class="accordion__title h6">
-                                                <span role="term" aria-details="faq-5">Кто может участвовать в программе?</span>
-                                            </h4>
-                                        </summary>
-                                    </details>
-                                    <div
-                                            class="accordion__content"
-                                            id="faq-5"
-                                            role="definition"
-                                    >
-                                        <div class="accordion__content-inner">
-                                            <div class="accordion__content-body">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
-                                                    nihil!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card__body">
+                  <form class="feedback-form" action="#!">
+                    <div class="feedback-form__cell field">
+                      <label class="field__label" for="firstName">
+                        Имя
+                        <span class="field__required-star" aria-hidden="true"
+                          >*</span
+                        >
+                      </label>
+                      <input
+                        class="field__control"
+                        id="firstName"
+                        placeholder="Иван"
+                        required
+                      />
                     </div>
+                    <div class="feedback-form__cell field">
+                      <label class="field__label" for="lastName">
+                        Фамилия
+                      </label>
+                      <input
+                        class="field__control"
+                        id="lastName"
+                        placeholder="Иванов"
+                      />
+                    </div>
+                    <div class="feedback-form__cell field">
+                      <label class="field__label" for="email">
+                        Email
+                        <span class="field__required-star" aria-hidden="true"
+                          >*</span
+                        >
+                      </label>
+                      <input
+                        class="field__control"
+                        id="email"
+                        placeholder="example@email.com"
+                        required
+                        type="email"
+                      />
+                    </div>
+                    <div class="feedback-form__cell field">
+                      <label class="field__label" for="phoneNumber"
+                        >Номер телефона</label
+                      >
+                      <div class="field__body">
+                        <div class="select" data-js-select>
+                          <label
+                            class="select__label visually-hidden"
+                            for="phoneNumberPrefix"
+                            id="phone-number-prefix-select-label"
+                          >
+                            Phone number prefix
+                          </label>
+                          <select
+                            class="select__original-control field__control"
+                            id="phoneNumberPrefix"
+                            tabindex="-1"
+                            data-js-select-original-control
+                          >
+                            <option value="+7" selected>+7</option>
+                            <option value="+1">+1</option>
+                            <option value="+2">+2</option>
+                            <option value="+3">+3</option>
+                          </select>
+                          <div class="select__body">
+                            <div
+                              class="select__button field__control"
+                              tabindex="0"
+                              role="combobox"
+                              aria-expanded="false"
+                              aria-haspopup="listbox"
+                              aria-controls="phone-number-prefix-select-dropdown"
+                              aria-labelledby="phone-number-prefix-select-label"
+                              data-js-select-button
+                            >
+                              +7
+                            </div>
+                            <div
+                              class="select__dropdown is-on-the-left-side"
+                              id="phone-number-prefix-select-dropdown"
+                              role="listbox"
+                              aria-labelledby="phone-number-prefix-select-label"
+                              data-js-select-dropdown
+                            >
+                              <div
+                                class="select__option is-selected is-current"
+                                id="phone-number-prefix-select-option-1"
+                                role="option"
+                                aria-selected="true"
+                                data-js-select-option
+                              >
+                                +7
+                              </div>
+                              <div
+                                class="select__option"
+                                id="phone-number-prefix-select-option-2"
+                                role="option"
+                                aria-selected="false"
+                                data-js-select-option
+                              >
+                                +1
+                              </div>
+                              <div
+                                class="select__option"
+                                id="phone-number-prefix-select-option-3"
+                                role="option"
+                                aria-selected="false"
+                                data-js-select-option
+                              >
+                                +2
+                              </div>
+                              <div
+                                class="select__option"
+                                id="phone-number-prefix-select-option-4"
+                                role="option"
+                                aria-selected="false"
+                                data-js-select-option
+                              >
+                                +3
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <input
+                          class="field__control"
+                          id="phoneNumber"
+                          placeholder="(999) 999-99-99"
+                          data-js-input-mask="(000) 000-00-00"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="feedback-form__cell feedback-form__cell--wide field"
+                    >
+                      <label class="field__label" for="message">
+                        Сообщение
+                        <span class="field__required-star" aria-hidden="true"
+                          >*</span
+                        >
+                      </label>
+                      <textarea
+                        class="field__control"
+                        id="message"
+                        placeholder="Привет! У меня есть идея..."
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="feedback-form__cell feedback-form__cell--wide">
+                      <div class="feedback-form__actions">
+                        <div class="feedback-form__agreement">
+                          <label class="checkbox">
+                            <input
+                              class="checkbox__input"
+                              type="checkbox"
+                              required
+                            />
+                            <span class="checkbox__label"
+                              >Я согласен с правилами пользователя и политикой
+                              приватности</span
+                            >
+                          </label>
+                        </div>
+                        <button
+                          class="feedback-form__submit-button button button--accent"
+                          type="submit"
+                        >
+                          Отправить
+                        </button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
+              </div>
             </div>
+            <div class="list__item">
+              <div class="card container">
+                <div class="card__preview">
+                  <div class="card__preview-main">
+                    <img
+                      class="card__preview-icon"
+                      src="./images/contacts/icon-2.svg"
+                      alt=""
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                    />
+                    <div class="card__preview-info">
+                      <h2 class="card__preview-title h3">
+                        Часто задаваемые вопросы
+                      </h2>
+                      <div class="card__preview-description">
+                        <p>
+                          Не нашли свой вопрос? <br />
+                          Напишите нам лично!
+                        </p>
+                      </div>
+                    </div>
+                    <a
+                      class="card__preview-link button button--dark-gray"
+                      href="mailto:contact@know-how.com"
+                    >
+                      <span class="icon icon--yellow-arrow">Задать вопрос</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="accordion-group">
+                    <div class="accordion tile">
+                      <details class="accordion__details" name="faq" open>
+                        <summary class="accordion__summary">
+                          <h4 class="accordion__title h6">
+                            <span role="term" aria-details="faq-1"
+                              >В чем основная цель программы?</span
+                            >
+                          </h4>
+                        </summary>
+                      </details>
+                      <div
+                        class="accordion__content"
+                        id="faq-1"
+                        role="definition"
+                      >
+                        <div class="accordion__content-inner">
+                          <div class="accordion__content-body">
+                            <p>
+                              Улучшить учебный процесс, повысить академическую
+                              успеваемость, развить soft skills <br />
+                              и поддерживать сплоченное студенческое сообщество.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion tile">
+                      <details class="accordion__details" name="faq">
+                        <summary class="accordion__summary">
+                          <h4 class="accordion__title h6">
+                            <span role="term" aria-details="faq-2"
+                              >Как работает система поиска
+                              партнеров/наставников?</span
+                            >
+                          </h4>
+                        </summary>
+                      </details>
+                      <div
+                        class="accordion__content"
+                        id="faq-2"
+                        role="definition"
+                      >
+                        <div class="accordion__content-inner">
+                          <div class="accordion__content-body">
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Eius, illo.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion tile">
+                      <details class="accordion__details" name="faq">
+                        <summary class="accordion__summary">
+                          <h4 class="accordion__title h6">
+                            <span role="term" aria-details="faq-3"
+                              >Как связаться с организаторами программы?</span
+                            >
+                          </h4>
+                        </summary>
+                      </details>
+                      <div
+                        class="accordion__content"
+                        id="faq-3"
+                        role="definition"
+                      >
+                        <div class="accordion__content-inner">
+                          <div class="accordion__content-body">
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Est, impedit.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion tile">
+                      <details class="accordion__details" name="faq">
+                        <summary class="accordion__summary">
+                          <h4 class="accordion__title h6">
+                            <span role="term" aria-details="faq-4"
+                              >Получу ли я сертификат об участии в
+                              программе?</span
+                            >
+                          </h4>
+                        </summary>
+                      </details>
+                      <div
+                        class="accordion__content"
+                        id="faq-4"
+                        role="definition"
+                      >
+                        <div class="accordion__content-inner">
+                          <div class="accordion__content-body">
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Ab, omnis!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion tile">
+                      <details class="accordion__details" name="faq">
+                        <summary class="accordion__summary">
+                          <h4 class="accordion__title h6">
+                            <span role="term" aria-details="faq-5"
+                              >Кто может участвовать в программе?</span
+                            >
+                          </h4>
+                        </summary>
+                      </details>
+                      <div
+                        class="accordion__content"
+                        id="faq-5"
+                        role="definition"
+                      >
+                        <div class="accordion__content-inner">
+                          <div class="accordion__content-body">
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Dicta, nihil!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="about" aria-labelledby="about-title">
+      <section class="about" aria-labelledby="about-title">
         <div class="about__inner container">
-            <header class="about__header">
-                <img
-                        class="about__icon"
-                        src="./images/about/icon.svg"
-                        alt=""
-                        width="150"
-                        height="150"
-                        loading="lazy"
-                />
-                <div class="about__info">
-                    <p class="about__subtitle tag">
-                        Изучайте, развивайтесь и самосовершенствуйтесь
-                    </p>
-                    <h2 class="about__title" id="about-title">
-                        KnowHow - это ваш маленький помощник <br/>
-                        для изучения чего-то нового
-                    </h2>
+          <header class="about__header">
+            <img
+              class="about__icon"
+              src="./images/about/icon.svg"
+              alt=""
+              width="150"
+              height="150"
+              loading="lazy"
+            />
+            <div class="about__info">
+              <p class="about__subtitle tag">
+                Изучайте, развивайтесь и самосовершенствуйтесь
+              </p>
+              <h2 class="about__title" id="about-title">
+                KnowHow - это ваш маленький помощник <br />
+                для изучения чего-то нового
+              </h2>
+            </div>
+            <div class="about__description">
+              <p>
+                Мы - не просто сервис, а люди, которые как и вы, стремятся к
+                развитию, росту, новым знаниям, взаимопомощи и поддержке нового
+                поколения.
+              </p>
+            </div>
+          </header>
+          <ul class="about__list">
+            <li class="about__item">
+              <div class="about-card tile">
+                <h3 class="about-card__title">Концепция</h3>
+                <div class="about-card__description">
+                  <p>
+                    Поддержка качественного уровня самообразования среди
+                    студентов.
+                  </p>
                 </div>
-                <div class="about__description">
-                    <p>
-                        Мы - не просто сервис, а люди, которые как и вы, стремятся к
-                        развитию, росту, новым знаниям, взаимопомощи и поддержке нового
-                        поколения.
-                    </p>
+              </div>
+            </li>
+            <li class="about__item">
+              <a href="./contacts.html" class="about-card tile">
+                <h3 class="about-card__title">Контакты</h3>
+                <div class="about-card__description">
+                  <p>
+                    Здесь вы можете связаться с нами <br />
+                    для дальнейшего сотрудничества.
+                  </p>
                 </div>
-            </header>
-            <ul class="about__list">
-                <li class="about__item">
-                    <a href="./news.html" class="about-card tile">
-                        <h3 class="about-card__title circle-icon">Концепция</h3>
-                        <div class="about-card__description">
-                            <p>
-                                Здесь вы можете более подробнее ознакомиться <br/>
-                                с нашей концепцией.
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li class="about__item">
-                    <a href="./contacts.html" class="about-card tile">
-                        <h3 class="about-card__title circle-icon">Контакты</h3>
-                        <div class="about-card__description">
-                            <p>
-                                Здесь вы можете связаться с нами <br/>
-                                для дальнейшего сотрудничества.
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li class="about__item">
-                    <a href="#!" class="about-card tile">
-                        <h3 class="about-card__title circle-icon">Новые технологии</h3>
-                        <div class="about-card__description">
-                            <p>
-                                Мы рады новым идеям, людям и возможностям. Если в тебе горит
-                                огонь - присоединяйся
-                            </p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+              </a>
+            </li>
+            <li class="about__item">
+              <div class="about-card tile">
+                <h3 class="about-card__title">Новые технологии</h3>
+                <div class="about-card__description">
+                  <p>
+                    Мы рады новым идеям, людям и возможностям. Если в тебе горит
+                    огонь - присоединяйся
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-    </section>
-</main>
+      </section>
+    </main>
 
-<footer class="footer">
-    <div class="footer__inner container">
+    <footer class="footer">
+      <div class="footer__inner container">
         <div class="footer__body">
-            <nav class="footer__menu">
-                <div class="footer__menu-column">
-                    <a href="/" class="footer__menu-main-link h6">Главная</a>
-                    <ul class="footer__menu-list">
-                        <li class="footer__menu-item">
-                            <a href="./news.html" class="footer__menu-link">Новости</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Отзывы</a>
-                        </li>
+          <nav class="footer__menu">
+            <div class="footer__menu-column">
+              <a href="/" class="footer__menu-main-link h6">Главная</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="./news.html" class="footer__menu-link">Новости</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Отзывы</a>
+                </li>
 
-                        <li class="footer__menu-item">
-                            <a href="./contacts.html" class="footer__menu-link"
-                            >Контакты</a
-                            >
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Опыт</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Обратная связь</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-                    <a href="#!" class="footer__menu-main-link h6">Новости</a>
-                    <ul class="footer__menu-list">
-                        <li class="footer__menu-item">
-                            <a href="./news.html" class="footer__menu-link"
-                            >Электронные книги</a
-                            >
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Онлайн-курсы</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Форумы</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Полезные видео</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Психология</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-                    <a href="./blog.html" class="footer__menu-main-link h6">Блог</a>
-                    <ul class="footer__menu-list">
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link"
-                            >Информационные системы и технологии</a
-                            >
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link"
-                            >Компьютерные системы и комплексы</a
-                            >
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Дизайн</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link"
-                            >Сетевое и системное администрирование</a
-                            >
-                            <span class="badge">Новое</span>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link"
-                            >Технология машиностроения</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-                    <a href="#!" class="footer__menu-main-link h6"
-                    >Полезная информация</a
-                    >
-                    <ul class="footer__menu-list">
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Концепция</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Основные положения</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-                    <ul class="footer__menu-list">
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link button">
-                    <span class="icon icon__yellow-arrow"
-                    >Электронные книги</span
-                    >
-                            </a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link button">
-                                <span class="icon icon__yellow-arrow">Онлайн - курсы</span>
-                            </a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link button">
-                                <span class="icon icon__yellow-arrow">VK</span>
-                            </a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link button">
-                                <span class="icon icon__yellow-arrow">Email</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                <li class="footer__menu-item">
+                  <a href="./contacts.html" class="footer__menu-link"
+                    >Контакты</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Опыт</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Обратная связь</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="#!" class="footer__menu-main-link h6">Новости</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Форумы</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Полезные видео</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Психология</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="./blog.html" class="footer__menu-main-link h6">Блог</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link"
+                    >Информационные системы и технологии</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link"
+                    >Компьютерные системы и комплексы</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Дизайн</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link"
+                    >Сетевое и системное администрирование</a
+                  >
+                  <span class="badge">Новое</span>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link"
+                    >Технология машиностроения</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="#!" class="footer__menu-main-link h6"
+                >Полезная информация</a
+              >
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Концепция</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Основные положения</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link button">
+                    <span class="icon icon__yellow-arrow">VK</span>
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link button">
+                    <span class="icon icon__yellow-arrow">Email</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
         <div class="footer__extra">
-            <div class="footer__extra-menu">
-                <ul class="footer__extra-menu-list">
-                    <li class="footer__extra-menu-item">
-                        <a href="#!" class="footer__extra-menu-link"
-                        >Основные положения</a
-                        >
-                    </li>
-                    <li class="footer__extra-menu-item">
-                        <a href="#!" class="footer__extra-menu-link"
-                        >Все права защищены</a
-                        >
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__soc1als soc1als">
-                <ul class="soc1als__list">
-                    <li class="soc1als__item">
-                        <a
-                                href="#!"
-                                class="soc1als__link"
-                                target="_blank"
-                                aria-label="Medium"
-                                title="Medium"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0,0,256,256"
-                                 style="fill:#FFFFFF;">
-                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                   stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                   stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                                   font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                    <g transform="scale(5.12,5.12)">
-                                        <path d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="soc1als__item">
-                        <a
-                                href="#!"
-                                class="soc1als__link"
-                                target="_blank"
-                                aria-label="LinkedIn"
-                                title="LinkedIn "
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0,0,256,256"
-                                 style="fill:#FFFFFF;">
-                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                   stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                   stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                                   font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                    <g transform="scale(5.12,5.12)">
-                                        <path d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM37.72,33l-3.73,-0.01c0,0 -0.08,0.01 -0.21,0.01c-0.3,0 -0.92,-0.08 -1.65,-0.58c-1.31,-0.91 -2.56,-3.17 -3.55,-3.17c-0.07,0 -0.13,0.01 -0.19,0.03c-0.86,0.27 -1.12,1.13 -1.12,2.18c0,0.37 -0.26,0.54 -0.96,0.54h-1.93c-2.16,0 -4.25,-0.05 -6.6,-2.62c-3.46,-3.79 -6.7,-10.53 -6.7,-10.53c0,0 -0.18,-0.39 0.01,-0.62c0.18,-0.21 0.6,-0.23 0.76,-0.23c0.04,0 0.06,0 0.06,0h4c0,0 0.37,0.07 0.64,0.27c0.23,0.17 0.35,0.48 0.35,0.48c0,0 0.68,1.32 1.53,2.81c1.43,2.46 2.2,3.28 2.75,3.28c0.09,0 0.18,-0.02 0.27,-0.07c0.82,-0.45 0.58,-4.09 0.58,-4.09c0,0 0.01,-1.32 -0.42,-1.9c-0.33,-0.46 -0.96,-0.59 -1.24,-0.63c-0.22,-0.03 0.14,-0.55 0.62,-0.79c0.62,-0.3 1.65,-0.36 2.89,-0.36h0.6c1.17,0.02 1.2,0.14 1.66,0.25c1.38,0.33 0.91,1.62 0.91,4.71c0,0.99 -0.18,2.38 0.53,2.85c0.05,0.03 0.12,0.05 0.21,0.05c0.46,0 1.45,-0.59 3.03,-3.26c0.88,-1.52 1.56,-3.03 1.56,-3.03c0,0 0.15,-0.27 0.38,-0.41c0.22,-0.13 0.22,-0.13 0.51,-0.13h0.03c0.32,0 3.5,-0.03 4.2,-0.03h0.08c0.67,0 1.28,0.01 1.39,0.42c0.16,0.62 -0.49,1.73 -2.2,4.03c-2.82,3.77 -3.14,3.49 -0.8,5.67c2.24,2.08 2.7,3.09 2.78,3.22c0.93,1.54 -1.03,1.66 -1.03,1.66z"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <p class="footer__copyright">
-                ©
-                <time datetime="2024">2025</time>
-                Объединение студентов Политехнического колледжа, 3994
-            </p>
+          <div class="footer__extra-menu">
+            <ul class="footer__extra-menu-list">
+              <li class="footer__extra-menu-item">
+                <a href="#!" class="footer__extra-menu-link"
+                  >Основные положения</a
+                >
+              </li>
+              <li class="footer__extra-menu-item">
+                <a href="#!" class="footer__extra-menu-link"
+                  >Все права защищены</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__soc1als soc1als">
+            <ul class="soc1als__list">
+              <li class="soc1als__item">
+                <a
+                  href="#!"
+                  class="soc1als__link"
+                  target="_blank"
+                  aria-label="Medium"
+                  title="Medium"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0,0,256,256"
+                    style="fill: #ffffff"
+                  >
+                    <g
+                      fill="#ffffff"
+                      fill-rule="nonzero"
+                      stroke="none"
+                      stroke-width="1"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      stroke-miterlimit="10"
+                      stroke-dasharray=""
+                      stroke-dashoffset="0"
+                      font-family="none"
+                      font-weight="none"
+                      font-size="none"
+                      text-anchor="none"
+                      style="mix-blend-mode: normal"
+                    >
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc1als__item">
+                <a
+                  href="#!"
+                  class="soc1als__link"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  title="LinkedIn "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0,0,256,256"
+                    style="fill: #ffffff"
+                  >
+                    <g
+                      fill="#ffffff"
+                      fill-rule="nonzero"
+                      stroke="none"
+                      stroke-width="1"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      stroke-miterlimit="10"
+                      stroke-dasharray=""
+                      stroke-dashoffset="0"
+                      font-family="none"
+                      font-weight="none"
+                      font-size="none"
+                      text-anchor="none"
+                      style="mix-blend-mode: normal"
+                    >
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM37.72,33l-3.73,-0.01c0,0 -0.08,0.01 -0.21,0.01c-0.3,0 -0.92,-0.08 -1.65,-0.58c-1.31,-0.91 -2.56,-3.17 -3.55,-3.17c-0.07,0 -0.13,0.01 -0.19,0.03c-0.86,0.27 -1.12,1.13 -1.12,2.18c0,0.37 -0.26,0.54 -0.96,0.54h-1.93c-2.16,0 -4.25,-0.05 -6.6,-2.62c-3.46,-3.79 -6.7,-10.53 -6.7,-10.53c0,0 -0.18,-0.39 0.01,-0.62c0.18,-0.21 0.6,-0.23 0.76,-0.23c0.04,0 0.06,0 0.06,0h4c0,0 0.37,0.07 0.64,0.27c0.23,0.17 0.35,0.48 0.35,0.48c0,0 0.68,1.32 1.53,2.81c1.43,2.46 2.2,3.28 2.75,3.28c0.09,0 0.18,-0.02 0.27,-0.07c0.82,-0.45 0.58,-4.09 0.58,-4.09c0,0 0.01,-1.32 -0.42,-1.9c-0.33,-0.46 -0.96,-0.59 -1.24,-0.63c-0.22,-0.03 0.14,-0.55 0.62,-0.79c0.62,-0.3 1.65,-0.36 2.89,-0.36h0.6c1.17,0.02 1.2,0.14 1.66,0.25c1.38,0.33 0.91,1.62 0.91,4.71c0,0.99 -0.18,2.38 0.53,2.85c0.05,0.03 0.12,0.05 0.21,0.05c0.46,0 1.45,-0.59 3.03,-3.26c0.88,-1.52 1.56,-3.03 1.56,-3.03c0,0 0.15,-0.27 0.38,-0.41c0.22,-0.13 0.22,-0.13 0.51,-0.13h0.03c0.32,0 3.5,-0.03 4.2,-0.03h0.08c0.67,0 1.28,0.01 1.39,0.42c0.16,0.62 -0.49,1.73 -2.2,4.03c-2.82,3.77 -3.14,3.49 -0.8,5.67c2.24,2.08 2.7,3.09 2.78,3.22c0.93,1.54 -1.03,1.66 -1.03,1.66z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer__copyright">
+            ©
+            <time datetime="2025">2025</time>
+            Объединение студентов Политехнического колледжа, 3994
+          </p>
         </div>
-    </div>
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>

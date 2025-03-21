@@ -1,665 +1,796 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>KnowHow | Подкасты</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/main.css" />
     <script src="./scripts/main.js" type="module" defer></script>
-</head>
-<body>
-<header class="header" data-js-header>
-    <div class="header__promo">
+  </head>
+  <body>
+    <header class="header" data-js-header>
+      <div class="header__promo">
         <div class="header__promo-inner container">
-            <a href="/" class="header__promo-link">
-                <span class="icon icon__yellow-arrow">
-                    Следите за нашими последними изменениями и новостями
-                </span>
-            </a>
+          <a href="/" class="header__promo-link">
+            <span class="icon icon__yellow-arrow">
+              Следите за нашими последними изменениями и новостями
+            </span>
+          </a>
         </div>
-    </div>
-    <div class="header__body">
+      </div>
+      <div class="header__body">
         <div class="header__body-inner container">
+          <a
+            href="./index.html"
+            class="header__logo logo"
+            aria-label="Home"
+            title="Home"
+          >
+            <img
+              src="./images/logo.svg"
+              alt=""
+              class="logo__image"
+              width="179"
+              height="50"
+            />
+            <small>beta</small>
+          </a>
+          <div class="header__overlay" data-js-header-overlay>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="./index.html" class="header__menu-link">Главная</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="./news.html" class="header__menu-link">Новости</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="./podcasts.html" class="header__menu-link is-active"
+                    >Подкасты</a
+                  >
+                </li>
+              </ul>
+            </nav>
             <a
-                    href="./index.html"
-                    class="header__logo logo"
-                    aria-label="Home"
-                    title="Home"
+              href="./contacts.html"
+              class="header__contact-us-link button button--accent"
+              >Свяжитесь с нами</a
             >
-                <img
-                        src="./images/logo.svg"
-                        alt=""
-                        class="logo__image"
-                        width="179"
-                        height="50"
-                />
-            </a>
-            <div class="header__overlay" data-js-header-overlay>
-                <nav class="header__menu">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item">
-                            <a href="./index.html" class="header__menu-link"
-                            >Главная</a
-                            >
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="./news.html" class="header__menu-link">Новости</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="./podcasts.html" class="header__menu-link is-active"
-                            >Подкасты</a
-                            >
-                        </li>
+          </div>
 
-                    </ul>
-                </nav>
-                <a
-                        href="./contacts.html"
-                        class="header__contact-us-link button button--accent"
-                >Свяжитесь с нами</a
-                >
-            </div>
-
-            <button
-                    class="header__burger-button burger-button visible-mobile"
-                    type="button"
-                    aria-label="Open Menu"
-                    title="Open Menu"
-                    data-js-header-burger-button
-            >
-                <span class="burger-button__line"></span>
-                <span class="burger-button__line"></span>
-                <span class="burger-button__line"></span>
-            </button>
+          <button
+            class="header__burger-button burger-button visible-mobile"
+            type="button"
+            aria-label="Open Menu"
+            title="Open Menu"
+            data-js-header-burger-button
+          >
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+          </button>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
-<main>
-    <section class="hero-alt" aria-labelledby="podcasts-title">
+    <main>
+      <section class="hero-alt" aria-labelledby="podcasts-title">
         <header class="hero-alt__header">
-            <div class="hero-alt__header-inner container">
-                <h1 class="hero-alt__title" id="podcasts-title">
-                    О значимости эмоционального состояния <span class="hero-alt__title-hidden-part">в развитии</span>
-                </h1>
-                <p class="hero-alt__subtitle h1 hidden-mobile" aria-hidden="true">
-                    в развитии
-                </p>
-                <p class="hero-alt__description">
-                    Обучение и профессиональное развитие часто сопровождается стрессом. Новые задачи, высокие ожидания и
-                    давление могут вызвать чувство перегрузки. Умение распознавать и управлять своими эмоциями, такое
-                    как умение расслабиться и отдохнуть, становится необходимым инструментом для преодоления этих
-                    трудностей. Эффективное управление стрессом позволяет сохранять ясность мысли и фокусироваться на
-                    главном, не позволяя эмоциям мешать обучению.
-                </p>
-            </div>
+          <div class="hero-alt__header-inner container">
+            <h1 class="hero-alt__title" id="podcasts-title">
+              О значимости эмоционального состояния
+              <span class="hero-alt__title-hidden-part">в развитии</span>
+            </h1>
+            <p class="hero-alt__subtitle h1 hidden-mobile" aria-hidden="true">
+              в развитии
+            </p>
+            <p class="hero-alt__description">
+              Обучение и профессиональное развитие часто сопровождается
+              стрессом. Новые задачи, высокие ожидания и давление могут вызвать
+              чувство перегрузки. Умение распознавать и управлять своими
+              эмоциями, такое как умение расслабиться и отдохнуть, становится
+              необходимым инструментом для преодоления этих трудностей.
+              Эффективное управление стрессом позволяет сохранять ясность мысли
+              и фокусироваться на главном, не позволяя эмоциям мешать обучению.
+            </p>
+          </div>
         </header>
         <div class="hero-alt__body">
-            <ul class="list">
-                <li class="list__item">
-                    <div class="card container">
-                        <div class="card__preview">
-                            <div class="card__preview-main">
-                                <img
-                                        class="card__preview-icon"
-                                        src="./images/podcasts/icon-1.svg"
-                                        alt=""
-                                        width="80" height="80" loading="lazy"
-                                >
-                                <div class="card__preview-info">
-                                    <h2 class="card__preview-title h3">Медитации <br> и практики осознанности</h2>
-                                    <div class="card__rating-view rating-view"
-                                         aria-label="Rating 5 star"
-                                         title="Rating 5 star"
-                                    >
-                                        <div class="rating-view__star is-active"></div>
-                                        <div class="rating-view__star is-active"></div>
-                                        <div class="rating-view__star is-active"></div>
-                                        <div class="rating-view__star is-active"></div>
-                                        <div class="rating-view__star is-active"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card__preview-extra">
-                                <div class="card__cell tile">
-                                    <h3 class="card__cell-subtitle">Host</h3>
-                                    <p class="card__cell-description h6">Rutube</p>
-                                    <a href="./podcasts.html" class="card__cell-link button">
-                                        <span class="icon icon__yellow-arrow">Посмотреть</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card__body">
-                            <div class="card__grid card__grid--3-cols">
-                                <div class="card__cell card__cell--wide">
-                                    <div class="video-player" data-js-video-player>
-                                        <video class="video-player__video"
-                                               src="./videos/example.mp4"
-                                               width="917" height="412"
-                                               poster="./images/videos/poster-5.jpg"
-                                               data-js-video-player-video
-                                        ></video>
-                                        <div class="video-player__panel video-player__panel--center is-active"
-                                             data-js-video-player-panel>
-                                            <button class="video-player__play-button"
-                                                    aria-label="Play video"
-                                                    title="Play video"
-                                                    data-js-video-player-play-button
-                                            >
-                                                <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                          d="M6.5625 35C6.5625 19.2944 19.2944 6.5625 35 6.5625C50.7056 6.5625 63.4375 19.2944 63.4375 35C63.4375 50.7056 50.7056 63.4375 35 63.4375C19.2944 63.4375 6.5625 50.7056 6.5625 35ZM47.4663 32.1318C49.7167 33.382 49.7167 36.6183 47.4663 37.8685L31.1248 46.9471C28.9377 48.1621 26.25 46.5807 26.25 44.0788V25.9215C26.25 23.4196 28.9377 21.8381 31.1248 23.0531L47.4663 32.1318Z"
-                                                          fill="white"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card__cell card__cell--wide">
-                                    <h3 class="card__cell-title h4">
-                                        Видео-гиды по медитации, дыхательным упражнениям и практикам осознанности
-                                    </h3>
-                                    <p class="card__cell-description">
-                                        Они помогают успокоить ум, сосредоточиться и улучшить эмоциональное
-                                        самочувствие. Обратите внимание на видео с направляющим голосом, который вам
-                                        приятен.
-                                    </p>
-                                </div>
-                                <div class="card__cell tile">
-                                    <p class="card__cell-title">Количество эпизодов</p>
-                                    <p class="card__cell-description h6">∞</p>
-                                </div>
-                                <div class="card__cell tile">
-                                    <p class="card__cell-title">Среднее время эпизодов</p>
-                                    <p class="card__cell-description h6">30 минут</p>
-                                </div>
-                                <div class="card__cell tile">
-                                    <p class="card__cell-title">Влияние</p>
-                                    <p class="card__cell-description h6">Улучшение концентрации</p>
-                                </div>
-                            </div>
-                        </div>
+          <ul class="list">
+            <li class="list__item">
+              <div class="card container">
+                <div class="card__preview">
+                  <div class="card__preview-main">
+                    <img
+                      class="card__preview-icon"
+                      src="./images/podcasts/icon-1.svg"
+                      alt=""
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                    />
+                    <div class="card__preview-info">
+                      <h2 class="card__preview-title h3">
+                        Медитации <br />
+                        и практики осознанности
+                      </h2>
+                      <div
+                        class="card__rating-view rating-view"
+                        aria-label="Rating 5 star"
+                        title="Rating 5 star"
+                      >
+                        <div class="rating-view__star is-active"></div>
+                        <div class="rating-view__star is-active"></div>
+                        <div class="rating-view__star is-active"></div>
+                        <div class="rating-view__star is-active"></div>
+                        <div class="rating-view__star is-active"></div>
+                      </div>
                     </div>
-                </li>
-                <li class="list__item">
-                    <div class="card container">
-                        <div class="card__preview">
-                            <div class="card__preview-main">
-                                <img
-                                        class="card__preview-icon"
-                                        src="./images/podcasts/icon-2.svg"
-                                        alt=""
-                                        width="80" height="80" loading="lazy"
-                                >
-                                <div class="card__preview-info">
-                                    <h2 class="card__preview-title h3">Видео <br> с позитивными аффирмациями</h2>
-                                    <div class="card__rating-view rating-view"
-                                         aria-label="Rating 5 star"
-                                         title="Rating 5 star"
-                                    >
-                                        <div class="rating-view__star is-active"></div>
-                                        <div class="rating-view__star is-active"></div>
-                                        <div class="rating-view__star is-active"></div>
-                                        <div class="rating-view__star is-active"></div>
-                                        <div class="rating-view__star is-active"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card__preview-extra">
-                                <div class="card__cell tile">
-                                    <h3 class="card__cell-subtitle">Host</h3>
-                                    <p class="card__cell-description h6">Rutube</p>
-                                    <a href="./podcasts.html" class="card__cell-link button">
-                                        <span class="icon icon__yellow-arrow">Посмотреть</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card__body">
-                            <div class="card__grid card__grid--3-cols">
-                                <div class="card__cell card__cell--wide">
-                                    <div class="video-player" data-js-video-player>
-                                        <video class="video-player__video"
-                                               src="./videos/example.mp4"
-                                               width="917" height="412"
-                                               poster="./images/videos/poster-6.jpg"
-                                               data-js-video-player-video
-                                        ></video>
-                                        <div class="video-player__panel video-player__panel--center is-active"
-                                             data-js-video-player-panel>
-                                            <button class="video-player__play-button"
-                                                    aria-label="Play video"
-                                                    title="Play video"
-                                                    data-js-video-player-play-button
-                                            >
-                                                <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                          d="M6.5625 35C6.5625 19.2944 19.2944 6.5625 35 6.5625C50.7056 6.5625 63.4375 19.2944 63.4375 35C63.4375 50.7056 50.7056 63.4375 35 63.4375C19.2944 63.4375 6.5625 50.7056 6.5625 35ZM47.4663 32.1318C49.7167 33.382 49.7167 36.6183 47.4663 37.8685L31.1248 46.9471C28.9377 48.1621 26.25 46.5807 26.25 44.0788V25.9215C26.25 23.4196 28.9377 21.8381 31.1248 23.0531L47.4663 32.1318Z"
-                                                          fill="white"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card__cell card__cell--wide">
-                                    <h3 class="card__cell-title h4">
-                                        Эти короткие ролики направлены на улучшение самооценки и мотивации.
-                                    </h3>
-                                    <p class="card__cell-description">
-                                        Они работают на основе принципа повторения и внушения. Регулярное прослушивание
-                                        и просмотр таких видео может помочь перепрограммировать подсознание и изменить
-                                        негативные мыслительные паттерны на более позитивные.
-                                    </p>
-                                </div>
-                                <div class="card__cell tile">
-                                    <p class="card__cell-title">Количество эпиздов</p>
-                                    <p class="card__cell-description h6">∞</p>
-                                </div>
-                                <div class="card__cell tile">
-                                    <p class="card__cell-title">Среднее время эпизодов</p>
-                                    <p class="card__cell-description h6">20 минут</p>
-                                </div>
-                                <div class="card__cell tile">
-                                    <p class="card__cell-title">Влияние</p>
-                                    <p class="card__cell-description h6">Улучшение мотивации</p>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="card__preview-extra">
+                    <div class="card__cell tile">
+                      <h3 class="card__cell-subtitle">Host</h3>
+                      <p class="card__cell-description h6">Rutube</p>
+                      <a href="https://rutube.ru/video/ed3ba0dd455118a01995935cc2613904/" target="_blank" class="card__cell-link button">
+                        <span class="icon icon__yellow-arrow">Посмотреть</span>
+                      </a>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="section" aria-labelledby="podcasts-videos-title">
-        <header class="section__header">
-            <div class="section__header-inner container">
-                <div class="section__header-info">
-                    <p class="section__subtitle tag">Может быть полезным</p>
-                    <h2 class="section__title" id="podcasts-videos-title">Последние подкасты</h2>
+                  </div>
                 </div>
+                <div class="card__body">
+                  <div class="card__grid card__grid--3-cols">
+                    <div class="card__cell card__cell--wide">
+                      <div class="video-player" data-js-video-player>
+                        <video
+                          class="video-player__video"
+                          src="./videos/example.mp4"
+                          width="917"
+                          height="412"
+                          poster="./images/videos/poster-5.jpg"
+                          data-js-video-player-video
+                        ></video>
+                        <div
+                          class="video-player__panel video-player__panel--center is-active"
+                          data-js-video-player-panel
+                        >
+                          <button
+                            class="video-player__play-button"
+                            aria-label="Play video"
+                            title="Play video"
+                            data-js-video-player-play-button
+                          >
+                            <svg
+                              width="70"
+                              height="70"
+                              viewBox="0 0 70 70"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M6.5625 35C6.5625 19.2944 19.2944 6.5625 35 6.5625C50.7056 6.5625 63.4375 19.2944 63.4375 35C63.4375 50.7056 50.7056 63.4375 35 63.4375C19.2944 63.4375 6.5625 50.7056 6.5625 35ZM47.4663 32.1318C49.7167 33.382 49.7167 36.6183 47.4663 37.8685L31.1248 46.9471C28.9377 48.1621 26.25 46.5807 26.25 44.0788V25.9215C26.25 23.4196 28.9377 21.8381 31.1248 23.0531L47.4663 32.1318Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__cell card__cell--wide">
+                      <h3 class="card__cell-title h4">
+                        Видео-гиды по медитации, дыхательным упражнениям и
+                        практикам осознанности
+                      </h3>
+                      <p class="card__cell-description">
+                        Они помогают успокоить ум, сосредоточиться и улучшить
+                        эмоциональное самочувствие. Обратите внимание на видео с
+                        направляющим голосом, который вам приятен.
+                      </p>
+                    </div>
+                    <div class="card__cell tile">
+                      <p class="card__cell-title">Количество эпизодов</p>
+                      <p class="card__cell-description h6">∞</p>
+                    </div>
+                    <div class="card__cell tile">
+                      <p class="card__cell-title">Среднее время эпизодов</p>
+                      <p class="card__cell-description h6">30 минут</p>
+                    </div>
+                    <div class="card__cell tile">
+                      <p class="card__cell-title">Влияние</p>
+                      <p class="card__cell-description h6">
+                        Улучшение концентрации
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list__item">
+              <div class="card container">
+                <div class="card__preview">
+                  <div class="card__preview-main">
+                    <img
+                      class="card__preview-icon"
+                      src="./images/podcasts/icon-2.svg"
+                      alt=""
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                    />
+                    <div class="card__preview-info">
+                      <h2 class="card__preview-title h3">
+                        Видео <br />
+                        с позитивными аффирмациями
+                      </h2>
+                      <div
+                        class="card__rating-view rating-view"
+                        aria-label="Rating 5 star"
+                        title="Rating 5 star"
+                      >
+                        <div class="rating-view__star is-active"></div>
+                        <div class="rating-view__star is-active"></div>
+                        <div class="rating-view__star is-active"></div>
+                        <div class="rating-view__star is-active"></div>
+                        <div class="rating-view__star is-active"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__preview-extra">
+                    <div class="card__cell tile">
+                      <h3 class="card__cell-subtitle">Host</h3>
+                      <p class="card__cell-description h6">Rutube</p>
+                      <a href="https://rutube.ru/video/c17db2b90627f537490596300f014b94/" target="_blank" class="card__cell-link button">
+                        <span class="icon icon__yellow-arrow">Посмотреть</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__grid card__grid--3-cols">
+                    <div class="card__cell card__cell--wide">
+                      <div class="video-player" data-js-video-player>
+                        <video
+                          class="video-player__video"
+                          src="./videos/example.mp4"
+                          width="917"
+                          height="412"
+                          poster="./images/videos/poster-6.jpg"
+                          data-js-video-player-video
+                        ></video>
+                        <div
+                          class="video-player__panel video-player__panel--center is-active"
+                          data-js-video-player-panel
+                        >
+                          <button
+                            class="video-player__play-button"
+                            aria-label="Play video"
+                            title="Play video"
+                            data-js-video-player-play-button
+                          >
+                            <svg
+                              width="70"
+                              height="70"
+                              viewBox="0 0 70 70"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M6.5625 35C6.5625 19.2944 19.2944 6.5625 35 6.5625C50.7056 6.5625 63.4375 19.2944 63.4375 35C63.4375 50.7056 50.7056 63.4375 35 63.4375C19.2944 63.4375 6.5625 50.7056 6.5625 35ZM47.4663 32.1318C49.7167 33.382 49.7167 36.6183 47.4663 37.8685L31.1248 46.9471C28.9377 48.1621 26.25 46.5807 26.25 44.0788V25.9215C26.25 23.4196 28.9377 21.8381 31.1248 23.0531L47.4663 32.1318Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__cell card__cell--wide">
+                      <h3 class="card__cell-title h4">
+                        Эти короткие ролики направлены на улучшение самооценки и
+                        мотивации.
+                      </h3>
+                      <p class="card__cell-description">
+                        Они работают на основе принципа повторения и внушения.
+                        Регулярное прослушивание и просмотр таких видео может
+                        помочь перепрограммировать подсознание и изменить
+                        негативные мыслительные паттерны на более позитивные.
+                      </p>
+                    </div>
+                    <div class="card__cell tile">
+                      <p class="card__cell-title">Количество эпиздов</p>
+                      <p class="card__cell-description h6">∞</p>
+                    </div>
+                    <div class="card__cell tile">
+                      <p class="card__cell-title">Среднее время эпизодов</p>
+                      <p class="card__cell-description h6">20 минут</p>
+                    </div>
+                    <div class="card__cell tile">
+                      <p class="card__cell-title">Влияние</p>
+                      <p class="card__cell-description h6">
+                        Улучшение мотивации
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="podcasts-videos-title">
+        <header class="section__header">
+          <div class="section__header-inner container">
+            <div class="section__header-info">
+              <p class="section__subtitle tag">Может быть полезным</p>
+              <h2 class="section__title" id="podcasts-videos-title">
+                Последние подкасты
+              </h2>
             </div>
+          </div>
         </header>
         <div class="section__body">
-            <ul class="bordered-grid bordered-grid--3-cols container">
-                <li class="bordered-grid__item">
-                    <div class="video-card">
-                        <div class="video-card__player video-player" data-js-video-player>
-                            <video class="video-player__video video-player__video--small"
-                                   src="./videos/example.mp4"
-                                   width="470" height="290"
-                                   poster="https://images.nationalgeographic.org/image/upload/v1638892272/EducationHub/photos/hoh-river-valley.jpg"
-                                   data-js-video-player-video
-                            ></video>
-                            <div class="video-player__panel is-active" data-js-video-player-panel>
-                                <button class="video-player__play-button"
-                                        aria-label="Play video"
-                                        title="Play video"
-                                        data-js-video-player-play-button
-                                >
-                                    <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M6.5625 35C6.5625 19.2944 19.2944 6.5625 35 6.5625C50.7056 6.5625 63.4375 19.2944 63.4375 35C63.4375 50.7056 50.7056 63.4375 35 63.4375C19.2944 63.4375 6.5625 50.7056 6.5625 35ZM47.4663 32.1318C49.7167 33.382 49.7167 36.6183 47.4663 37.8685L31.1248 46.9471C28.9377 48.1621 26.25 46.5807 26.25 44.0788V25.9215C26.25 23.4196 28.9377 21.8381 31.1248 23.0531L47.4663 32.1318Z"
-                                              fill="white"/>
-                                    </svg>
-                                </button>
-                                <div class="video-player__duration">2.30 min</div>
-                            </div>
-                        </div>
-                        <div class="video-card__body">
-                            <h3 class="video-card__title h5">Видео с природой</h3>
-                            <div class="video-card__description">
-                                <p>
-                                    Замедленная съемка природы, пейзажи, звуки леса или моря - все это отлично
-                                    способствует релаксации и снижению уровня стресса.
-                                </p>
-                            </div>
-                        </div>
-                        <a href="#!" class="video-card__link button">
-                            <span class="icon icon__yellow-arrow">Смотреть</span>
-                        </a>
-                    </div>
-                </li>
-                <li class="bordered-grid__item">
-                    <div class="video-card">
-                        <div class="video-card__player video-player" data-js-video-player>
-                            <video class="video-player__video video-player__video--small"
-                                   src="./videos/example.mp4"
-                                   width="470" height="290"
-                                   poster="https://images.mir24.tv/EfC2p1cw8E3CXaNpQFHzc82htnbTUOzq-n2i2TVSJm8/q:95/w:865/h:500/c:5681:3342:nowe:223:0/rt:fill-down/czM6Ly9taXIyNC10di9tZWRpYS9BcnRpY2xlL2ltYWdlLzJiOTVkYTQyLWJmMTMtNWY2NC1iYzRlLTNmMGJkYzA4OGIwMy9iYTNkNDc3ZTMwYWY4N2I2MzUxMmQzNWRmYTFiMTc1YjhhY2EzOWI0YzU2Mzc5ZTc1YmFiZGYxZTRiY2Q0YzAwLmpwZw.jpg"
-                                   data-js-video-player-video
-                            ></video>
-                            <div class="video-player__panel is-active" data-js-video-player-panel>
-                                <button class="video-player__play-button"
-                                        aria-label="Play video"
-                                        title="Play video"
-                                        data-js-video-player-play-button
-                                >
-                                    <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M6.5625 35C6.5625 19.2944 19.2944 6.5625 35 6.5625C50.7056 6.5625 63.4375 19.2944 63.4375 35C63.4375 50.7056 50.7056 63.4375 35 63.4375C19.2944 63.4375 6.5625 50.7056 6.5625 35ZM47.4663 32.1318C49.7167 33.382 49.7167 36.6183 47.4663 37.8685L31.1248 46.9471C28.9377 48.1621 26.25 46.5807 26.25 44.0788V25.9215C26.25 23.4196 28.9377 21.8381 31.1248 23.0531L47.4663 32.1318Z"
-                                              fill="white"/>
-                                    </svg>
-                                </button>
-                                <div class="video-player__duration">2.30 min</div>
-                            </div>
-                        </div>
-                        <div class="video-card__body">
-                            <h3 class="video-card__title h5">ASMR</h3>
-                            <div class="video-card__description">
-                                <p>
-                                    Видесо с ASMR могут помочь расслабиться и снять напряжение. Однако, важно выбирать
-                                    видео, которые приятны вам.
-                                </p>
-                            </div>
-                        </div>
-                        <a href="#!" class="video-card__link button">
-                            <span class="icon icon__yellow-arrow">Смотреть</span>
-                        </a>
-                    </div>
-                </li>
-                <li class="bordered-grid__item">
-                    <div class="video-card">
-                        <div class="video-card__player video-player" data-js-video-player>
-                            <video class="video-player__video video-player__video--small"
-                                   src="./videos/example.mp4"
-                                   width="470" height="290"
-                                   poster="./images/videos/poster-9.jpg"
-                                   data-js-video-player-video
-                            ></video>
-                            <div class="video-player__panel is-active" data-js-video-player-panel>
-                                <button class="video-player__play-button"
-                                        aria-label="Play video"
-                                        title="Play video"
-                                        data-js-video-player-play-button
-                                >
-                                    <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M6.5625 35C6.5625 19.2944 19.2944 6.5625 35 6.5625C50.7056 6.5625 63.4375 19.2944 63.4375 35C63.4375 50.7056 50.7056 63.4375 35 63.4375C19.2944 63.4375 6.5625 50.7056 6.5625 35ZM47.4663 32.1318C49.7167 33.382 49.7167 36.6183 47.4663 37.8685L31.1248 46.9471C28.9377 48.1621 26.25 46.5807 26.25 44.0788V25.9215C26.25 23.4196 28.9377 21.8381 31.1248 23.0531L47.4663 32.1318Z"
-                                              fill="white"/>
-                                    </svg>
-                                </button>
-                                <div class="video-player__duration">2.30 min</div>
-                            </div>
-                        </div>
-                        <div class="video-card__body">
-                            <h3 class="video-card__title h5">Образовательные видео на любимые темы</h3>
-                            <div class="video-card__description">
-                                <p>
-                                    Кратковременный просмотр видео на любимые темы, может помочь отвлечься и
-                                    переключиться, восстановив энергию.
-                                </p>
-                            </div>
-                        </div>
-                        <a href="#!" class="video-card__link button">
-                            <span class="icon icon__yellow-arrow">Listen Podcast</span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="about" aria-labelledby="about-title">
-        <div class="about__inner container">
-            <header class="about__header">
-                <img
-                        class="about__icon"
-                        src="./images/about/icon.svg"
-                        alt=""
-                        width="150"
-                        height="150"
-                        loading="lazy"
-                />
-                <div class="about__info">
-                    <p class="about__subtitle tag">
-                        Полезные источники
-                    </p>
-                    <h2 class="about__title" id="about-title">
-                        Дополнительные способы развития эмоциональной стабильности
-                    </h2>
-                </div>
-                <div class="about__description">
-                    <p>
-                        Помните, что важно критически оценивать информацию из любого источника и при необходимости
-                        обращаться к квалифицированному специалисту.
-                    </p>
-                </div>
-            </header>
-            <ul class="about__list">
-                <li class="about__item">
-                    <a href="./news.html" target="_blank" class="about-card tile">
-                        <h3 class="about-card__title circle-icon">Рабочие тетради и приложения</h3>
-                        <div class="about-card__description">
-                            <p>
-                                Рабочие тетради с практическими упражнениями по развитию эмоционального интеллекта <br>
-                                и управлению стрессом, а также мобильные приложения для медитации.
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li class="about__item">
-                    <a href="./contacts.html" target="_blank" class="about-card tile">
-                        <h3 class="about-card__title circle-icon">Группы и поддержки</h3>
-                        <div class="about-card__description">
-                            <p>
-                                Группы поддержки онлайн или оффлайн, посвященные людям с похожими проблемами и
-                                стремлениями. Важно найти доброжелательную группу c поддержкой для своего развития.
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li class="about__item">
-                    <a href="#!" target="_blank" class="about-card tile">
-                        <h3 class="about-card__title circle-icon">Блоги и статьи экспертов</h3>
-                        <div class="about-card__description">
-                            <p>
-                                Статьи и блоги квалифицированных психологов и психотерапевтов, посвященные темам
-                                эмоционального здоровья и саморазвития. Самое главное не заниматься самолечением.
-                            </p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-</main>
-<footer class="footer">
-    <div class="footer__inner container">
-        <div class="footer__body">
-            <nav class="footer__menu">
-                <div class="footer__menu-column">
-                    <a href="/" class="footer__menu-main-link h6">Главная</a>
-                    <ul class="footer__menu-list">
-                        <li class="footer__menu-item">
-                            <a href="./news.html" class="footer__menu-link">Новости</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Отзывы</a>
-                        </li>
-
-                        <li class="footer__menu-item">
-                            <a href="./contacts.html" class="footer__menu-link"
-                            >Контакты</a
-                            >
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Опыт</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Обратная связь</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-                    <a href="#!" class="footer__menu-main-link h6">Новости</a>
-                    <ul class="footer__menu-list">
-                        <li class="footer__menu-item">
-                            <a href="./news.html" class="footer__menu-link"
-                            >Электронные книги</a
-                            >
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Онлайн-курсы</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Форумы</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Полезные видео</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Психология</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-                    <a href="./blog.html" class="footer__menu-main-link h6">Блог</a>
-                    <ul class="footer__menu-list">
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link"
-                            >Информационные системы и технологии</a
-                            >
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link"
-                            >Компьютерные системы и комплексы</a
-                            >
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Дизайн</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link"
-                            >Сетевое и системное администрирование</a
-                            >
-                            <span class="badge">Новое</span>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link"
-                            >Технология машиностроения</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-                    <a href="#!" class="footer__menu-main-link h6"
-                    >Полезная информация</a
-                    >
-                    <ul class="footer__menu-list">
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Концепция</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">Основные положения</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__menu-column">
-
-                    <ul class="footer__menu-list">
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link button">
-                  <span class="icon icon__yellow-arrow"
-                  >Электронные книги</span
+          <ul class="bordered-grid bordered-grid--3-cols container">
+            <li class="bordered-grid__item">
+              <div class="video-card">
+                <div
+                  class="video-card__player video-player"
+                  data-js-video-player
+                >
+                  <video
+                    class="video-player__video video-player__video--small"
+                    src="./videos/example.mp4"
+                    width="470"
+                    height="290"
+                    poster="https://images.nationalgeographic.org/image/upload/v1638892272/EducationHub/photos/hoh-river-valley.jpg"
+                    data-js-video-player-video
+                  ></video>
+                  <div
+                    class="video-player__panel is-active"
+                    data-js-video-player-panel
                   >
-                            </a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link button">
-                                <span class="icon icon__yellow-arrow">Онлайн - курсы</span>
-                            </a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link button">
-                                <span class="icon icon__yellow-arrow">VK</span>
-                            </a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link button">
-                                <span class="icon icon__yellow-arrow">Email</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <button
+                      class="video-player__play-button"
+                      aria-label="Play video"
+                      title="Play video"
+                      data-js-video-player-play-button
+                    >
+                      <svg
+                        width="70"
+                        height="70"
+                        viewBox="0 0 70 70"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.5625 35C6.5625 19.2944 19.2944 6.5625 35 6.5625C50.7056 6.5625 63.4375 19.2944 63.4375 35C63.4375 50.7056 50.7056 63.4375 35 63.4375C19.2944 63.4375 6.5625 50.7056 6.5625 35ZM47.4663 32.1318C49.7167 33.382 49.7167 36.6183 47.4663 37.8685L31.1248 46.9471C28.9377 48.1621 26.25 46.5807 26.25 44.0788V25.9215C26.25 23.4196 28.9377 21.8381 31.1248 23.0531L47.4663 32.1318Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                    <div class="video-player__duration">2.30 min</div>
+                  </div>
                 </div>
-            </nav>
+                <div class="video-card__body">
+                  <h3 class="video-card__title h5">Видео с природой</h3>
+                  <div class="video-card__description">
+                    <p>
+                      Замедленная съемка природы, пейзажи, звуки леса или моря -
+                      все это отлично способствует релаксации и снижению уровня
+                      стресса.
+                    </p>
+                  </div>
+                </div>
+                <a href="https://rutube.ru/video/16013faac31f889e95fc764e1d74e91f/" target="_blank" class="video-card__link button">
+                  <span class="icon icon__yellow-arrow">Смотреть</span>
+                </a>
+              </div>
+            </li>
+            <li class="bordered-grid__item">
+              <div class="video-card">
+                <div
+                  class="video-card__player video-player"
+                  data-js-video-player
+                >
+                  <video
+                    class="video-player__video video-player__video--small"
+                    src="./videos/example.mp4"
+                    width="470"
+                    height="290"
+                    poster="https://images.mir24.tv/EfC2p1cw8E3CXaNpQFHzc82htnbTUOzq-n2i2TVSJm8/q:95/w:865/h:500/c:5681:3342:nowe:223:0/rt:fill-down/czM6Ly9taXIyNC10di9tZWRpYS9BcnRpY2xlL2ltYWdlLzJiOTVkYTQyLWJmMTMtNWY2NC1iYzRlLTNmMGJkYzA4OGIwMy9iYTNkNDc3ZTMwYWY4N2I2MzUxMmQzNWRmYTFiMTc1YjhhY2EzOWI0YzU2Mzc5ZTc1YmFiZGYxZTRiY2Q0YzAwLmpwZw.jpg"
+                    data-js-video-player-video
+                  ></video>
+                  <div
+                    class="video-player__panel is-active"
+                    data-js-video-player-panel
+                  >
+                    <button
+                      class="video-player__play-button"
+                      aria-label="Play video"
+                      title="Play video"
+                      data-js-video-player-play-button
+                    >
+                      <svg
+                        width="70"
+                        height="70"
+                        viewBox="0 0 70 70"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.5625 35C6.5625 19.2944 19.2944 6.5625 35 6.5625C50.7056 6.5625 63.4375 19.2944 63.4375 35C63.4375 50.7056 50.7056 63.4375 35 63.4375C19.2944 63.4375 6.5625 50.7056 6.5625 35ZM47.4663 32.1318C49.7167 33.382 49.7167 36.6183 47.4663 37.8685L31.1248 46.9471C28.9377 48.1621 26.25 46.5807 26.25 44.0788V25.9215C26.25 23.4196 28.9377 21.8381 31.1248 23.0531L47.4663 32.1318Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                    <div class="video-player__duration">2.30 min</div>
+                  </div>
+                </div>
+                <div class="video-card__body">
+                  <h3 class="video-card__title h5">ASMR</h3>
+                  <div class="video-card__description">
+                    <p>
+                      Видесо с ASMR могут помочь расслабиться и снять
+                      напряжение. Однако, важно выбирать видео, которые приятны
+                      вам.
+                    </p>
+                  </div>
+                </div>
+                <a href="https://rutube.ru/video/dbe0e7088a9fda8be9415dbb7eb3a145/" target="_blank" class="video-card__link button">
+                  <span class="icon icon__yellow-arrow">Смотреть</span>
+                </a>
+              </div>
+            </li>
+            <li class="bordered-grid__item">
+              <div class="video-card">
+                <div
+                  class="video-card__player video-player"
+                  data-js-video-player
+                >
+                  <video
+                    class="video-player__video video-player__video--small"
+                    src="./videos/example.mp4"
+                    width="470"
+                    height="290"
+                    poster="./images/videos/poster-9.jpg"
+                    data-js-video-player-video
+                  ></video>
+                  <div
+                    class="video-player__panel is-active"
+                    data-js-video-player-panel
+                  >
+                    <button
+                      class="video-player__play-button"
+                      aria-label="Play video"
+                      title="Play video"
+                      data-js-video-player-play-button
+                    >
+                      <svg
+                        width="70"
+                        height="70"
+                        viewBox="0 0 70 70"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.5625 35C6.5625 19.2944 19.2944 6.5625 35 6.5625C50.7056 6.5625 63.4375 19.2944 63.4375 35C63.4375 50.7056 50.7056 63.4375 35 63.4375C19.2944 63.4375 6.5625 50.7056 6.5625 35ZM47.4663 32.1318C49.7167 33.382 49.7167 36.6183 47.4663 37.8685L31.1248 46.9471C28.9377 48.1621 26.25 46.5807 26.25 44.0788V25.9215C26.25 23.4196 28.9377 21.8381 31.1248 23.0531L47.4663 32.1318Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                    <div class="video-player__duration">2.30 min</div>
+                  </div>
+                </div>
+                <div class="video-card__body">
+                  <h3 class="video-card__title h5">
+                    Образовательные видео на любимые темы
+                  </h3>
+                  <div class="video-card__description">
+                    <p>
+                      Кратковременный просмотр видео на любимые темы, может
+                      помочь отвлечься и переключиться, восстановив энергию.
+                    </p>
+                  </div>
+                </div>
+                <a href="https://rutube.ru/video/b7efc8caef46df6b495bfb926b48910c/" target="_blank" class="video-card__link button">
+                  <span class="icon icon__yellow-arrow">Смотреть</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about" aria-labelledby="about-title">
+        <div class="about__inner container">
+          <header class="about__header">
+            <img
+              class="about__icon"
+              src="./images/about/icon.svg"
+              alt=""
+              width="150"
+              height="150"
+              loading="lazy"
+            />
+            <div class="about__info">
+              <p class="about__subtitle tag">Полезные источники</p>
+              <h2 class="about__title" id="about-title">
+                Дополнительные способы развития эмоциональной стабильности
+              </h2>
+            </div>
+            <div class="about__description">
+              <p>
+                Помните, что важно критически оценивать информацию из любого
+                источника и при необходимости обращаться к квалифицированному
+                специалисту.
+              </p>
+            </div>
+          </header>
+          <ul class="about__list">
+            <li class="about__item">
+              <a href="./news.html" target="_blank" class="about-card tile">
+                <h3 class="about-card__title circle-icon">
+                  Рабочие тетради и приложения
+                </h3>
+                <div class="about-card__description">
+                  <p>
+                    Рабочие тетради с практическими упражнениями по развитию
+                    эмоционального интеллекта <br />
+                    и управлению стрессом, а также мобильные приложения для
+                    медитации.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="about__item">
+              <a href="./contacts.html" target="_blank" class="about-card tile">
+                <h3 class="about-card__title circle-icon">
+                  Группы и поддержки
+                </h3>
+                <div class="about-card__description">
+                  <p>
+                    Группы поддержки онлайн или оффлайн, посвященные людям с
+                    похожими проблемами и стремлениями. Важно найти
+                    доброжелательную группу c поддержкой для своего развития.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="about__item">
+              <a href="#!" target="_blank" class="about-card tile">
+                <h3 class="about-card__title circle-icon">
+                  Блоги и статьи экспертов
+                </h3>
+                <div class="about-card__description">
+                  <p>
+                    Статьи и блоги квалифицированных психологов и
+                    психотерапевтов, посвященные темам эмоционального здоровья и
+                    саморазвития. Самое главное не заниматься самолечением.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <div class="footer__body">
+          <nav class="footer__menu">
+            <div class="footer__menu-column">
+              <a href="/" class="footer__menu-main-link h6">Главная</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="./news.html" class="footer__menu-link">Новости</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Отзывы</a>
+                </li>
+
+                <li class="footer__menu-item">
+                  <a href="./contacts.html" class="footer__menu-link"
+                    >Контакты</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Опыт</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Обратная связь</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="#!" class="footer__menu-main-link h6">Новости</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Форумы</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Полезные видео</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Психология</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="./blog.html" class="footer__menu-main-link h6">Блог</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link"
+                    >Информационные системы и технологии</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link"
+                    >Компьютерные системы и комплексы</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Дизайн</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link"
+                    >Сетевое и системное администрирование</a
+                  >
+                  <span class="badge">Новое</span>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link"
+                    >Технология машиностроения</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="#!" class="footer__menu-main-link h6"
+                >Полезная информация</a
+              >
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Концепция</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link">Основные положения</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link button">
+                    <span class="icon icon__yellow-arrow">VK</span>
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#!" class="footer__menu-link button">
+                    <span class="icon icon__yellow-arrow">Email</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
         <div class="footer__extra">
-            <div class="footer__extra-menu">
-                <ul class="footer__extra-menu-list">
-                    <li class="footer__extra-menu-item">
-                        <a href="#!" class="footer__extra-menu-link"
-                        >Основные положения</a
-                        >
-                    </li>
-                    <li class="footer__extra-menu-item">
-                        <a href="#!" class="footer__extra-menu-link"
-                        >Все права защищены</a
-                        >
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__soc1als soc1als">
-                <ul class="soc1als__list">
-                    <li class="soc1als__item">
-                        <a
-                                href="#!"
-                                class="soc1als__link"
-                                target="_blank"
-                                aria-label="Medium"
-                                title="Medium"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0,0,256,256"
-                                 style="fill:#FFFFFF;">
-                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                   stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                   stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                                   font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                    <g transform="scale(5.12,5.12)">
-                                        <path d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="soc1als__item">
-                        <a
-                                href="#!"
-                                class="soc1als__link"
-                                target="_blank"
-                                aria-label="LinkedIn"
-                                title="LinkedIn"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0,0,256,256"
-                                 style="fill:#FFFFFF;">
-                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                   stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                   stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                                   font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                    <g transform="scale(5.12,5.12)">
-                                        <path d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM37.72,33l-3.73,-0.01c0,0 -0.08,0.01 -0.21,0.01c-0.3,0 -0.92,-0.08 -1.65,-0.58c-1.31,-0.91 -2.56,-3.17 -3.55,-3.17c-0.07,0 -0.13,0.01 -0.19,0.03c-0.86,0.27 -1.12,1.13 -1.12,2.18c0,0.37 -0.26,0.54 -0.96,0.54h-1.93c-2.16,0 -4.25,-0.05 -6.6,-2.62c-3.46,-3.79 -6.7,-10.53 -6.7,-10.53c0,0 -0.18,-0.39 0.01,-0.62c0.18,-0.21 0.6,-0.23 0.76,-0.23c0.04,0 0.06,0 0.06,0h4c0,0 0.37,0.07 0.64,0.27c0.23,0.17 0.35,0.48 0.35,0.48c0,0 0.68,1.32 1.53,2.81c1.43,2.46 2.2,3.28 2.75,3.28c0.09,0 0.18,-0.02 0.27,-0.07c0.82,-0.45 0.58,-4.09 0.58,-4.09c0,0 0.01,-1.32 -0.42,-1.9c-0.33,-0.46 -0.96,-0.59 -1.24,-0.63c-0.22,-0.03 0.14,-0.55 0.62,-0.79c0.62,-0.3 1.65,-0.36 2.89,-0.36h0.6c1.17,0.02 1.2,0.14 1.66,0.25c1.38,0.33 0.91,1.62 0.91,4.71c0,0.99 -0.18,2.38 0.53,2.85c0.05,0.03 0.12,0.05 0.21,0.05c0.46,0 1.45,-0.59 3.03,-3.26c0.88,-1.52 1.56,-3.03 1.56,-3.03c0,0 0.15,-0.27 0.38,-0.41c0.22,-0.13 0.22,-0.13 0.51,-0.13h0.03c0.32,0 3.5,-0.03 4.2,-0.03h0.08c0.67,0 1.28,0.01 1.39,0.42c0.16,0.62 -0.49,1.73 -2.2,4.03c-2.82,3.77 -3.14,3.49 -0.8,5.67c2.24,2.08 2.7,3.09 2.78,3.22c0.93,1.54 -1.03,1.66 -1.03,1.66z"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <p class="footer__copyright">
-                ©
-                <time datetime="2024">2025</time>
-                Объединение студентов Политехнического колледжа, 3994
-            </p>
+          <div class="footer__extra-menu">
+            <ul class="footer__extra-menu-list">
+              <li class="footer__extra-menu-item">
+                <a href="#!" class="footer__extra-menu-link"
+                  >Основные положения</a
+                >
+              </li>
+              <li class="footer__extra-menu-item">
+                <a href="#!" class="footer__extra-menu-link"
+                  >Все права защищены</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__soc1als soc1als">
+            <ul class="soc1als__list">
+              <li class="soc1als__item">
+                <a
+                  href="#!"
+                  class="soc1als__link"
+                  target="_blank"
+                  aria-label="Medium"
+                  title="Medium"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0,0,256,256"
+                    style="fill: #ffffff"
+                  >
+                    <g
+                      fill="#ffffff"
+                      fill-rule="nonzero"
+                      stroke="none"
+                      stroke-width="1"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      stroke-miterlimit="10"
+                      stroke-dasharray=""
+                      stroke-dashoffset="0"
+                      font-family="none"
+                      font-weight="none"
+                      font-size="none"
+                      text-anchor="none"
+                      style="mix-blend-mode: normal"
+                    >
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc1als__item">
+                <a
+                  href="#!"
+                  class="soc1als__link"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  title="LinkedIn "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0,0,256,256"
+                    style="fill: #ffffff"
+                  >
+                    <g
+                      fill="#ffffff"
+                      fill-rule="nonzero"
+                      stroke="none"
+                      stroke-width="1"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      stroke-miterlimit="10"
+                      stroke-dasharray=""
+                      stroke-dashoffset="0"
+                      font-family="none"
+                      font-weight="none"
+                      font-size="none"
+                      text-anchor="none"
+                      style="mix-blend-mode: normal"
+                    >
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM37.72,33l-3.73,-0.01c0,0 -0.08,0.01 -0.21,0.01c-0.3,0 -0.92,-0.08 -1.65,-0.58c-1.31,-0.91 -2.56,-3.17 -3.55,-3.17c-0.07,0 -0.13,0.01 -0.19,0.03c-0.86,0.27 -1.12,1.13 -1.12,2.18c0,0.37 -0.26,0.54 -0.96,0.54h-1.93c-2.16,0 -4.25,-0.05 -6.6,-2.62c-3.46,-3.79 -6.7,-10.53 -6.7,-10.53c0,0 -0.18,-0.39 0.01,-0.62c0.18,-0.21 0.6,-0.23 0.76,-0.23c0.04,0 0.06,0 0.06,0h4c0,0 0.37,0.07 0.64,0.27c0.23,0.17 0.35,0.48 0.35,0.48c0,0 0.68,1.32 1.53,2.81c1.43,2.46 2.2,3.28 2.75,3.28c0.09,0 0.18,-0.02 0.27,-0.07c0.82,-0.45 0.58,-4.09 0.58,-4.09c0,0 0.01,-1.32 -0.42,-1.9c-0.33,-0.46 -0.96,-0.59 -1.24,-0.63c-0.22,-0.03 0.14,-0.55 0.62,-0.79c0.62,-0.3 1.65,-0.36 2.89,-0.36h0.6c1.17,0.02 1.2,0.14 1.66,0.25c1.38,0.33 0.91,1.62 0.91,4.71c0,0.99 -0.18,2.38 0.53,2.85c0.05,0.03 0.12,0.05 0.21,0.05c0.46,0 1.45,-0.59 3.03,-3.26c0.88,-1.52 1.56,-3.03 1.56,-3.03c0,0 0.15,-0.27 0.38,-0.41c0.22,-0.13 0.22,-0.13 0.51,-0.13h0.03c0.32,0 3.5,-0.03 4.2,-0.03h0.08c0.67,0 1.28,0.01 1.39,0.42c0.16,0.62 -0.49,1.73 -2.2,4.03c-2.82,3.77 -3.14,3.49 -0.8,5.67c2.24,2.08 2.7,3.09 2.78,3.22c0.93,1.54 -1.03,1.66 -1.03,1.66z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer__copyright">
+            ©
+            <time datetime="2025">2025</time>
+            Объединение студентов Политехнического колледжа, 3994
+          </p>
         </div>
-    </div>
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
